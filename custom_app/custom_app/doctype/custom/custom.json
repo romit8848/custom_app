@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TEST.####",
+ "creation": "2022-07-22 13:51:08.332669",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fname",
+  "lname",
+  "email",
+  "column_break_5",
+  "dn",
+  "date",
+  "image",
+  "section_break_8",
+  "password_9",
+  "fetch_from",
+  "selsct",
+  "abc",
+  "amended_from",
+  "age"
+ ],
+ "fields": [
+  {
+   "fieldname": "fname",
+   "fieldtype": "Barcode",
+   "in_list_view": 1,
+   "label": "first name"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "lname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "last name"
+  },
+  {
+   "default": "test",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dn",
+   "fieldtype": "Link",
+   "label": "dn",
+   "options": "Item"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "image"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "password_9",
+   "fieldtype": "Table",
+   "label": "TEST",
+   "options": "Sales Invoice Item"
+  },
+  {
+   "fetch_from": "dn.item_name",
+   "fetch_if_empty": 1,
+   "fieldname": "fetch_from",
+   "fieldtype": "Data",
+   "label": "fetch from",
+   "mandatory_depends_on": "eval: doc.dn",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "selsct",
+   "fieldtype": "Select",
+   "label": "select",
+   "options": "\nyes\nno\nboth\nno one"
+  },
+  {
+   "fieldname": "abc",
+   "fieldtype": "Signature",
+   "label": "abc"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "custom",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "age"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-25 16:04:04.659010",
+ "modified_by": "Administrator",
+ "module": "Custom App",
+ "name": "custom",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
