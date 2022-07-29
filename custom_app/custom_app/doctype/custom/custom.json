@@ -20,7 +20,8 @@
   "selsct",
   "abc",
   "amended_from",
-  "age"
+  "age",
+  "custom_list"
  ],
  "fields": [
   {
@@ -107,12 +108,18 @@
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "age"
+  },
+  {
+   "fieldname": "custom_list",
+   "fieldtype": "Table",
+   "label": "custom list",
+   "options": "custom item"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-25 16:04:04.659010",
+ "modified": "2022-07-28 16:41:28.350573",
  "modified_by": "Administrator",
  "module": "Custom App",
  "name": "custom",

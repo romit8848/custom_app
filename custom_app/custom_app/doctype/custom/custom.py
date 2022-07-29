@@ -8,10 +8,13 @@ class custom(Document):
 	def validate(self):
 		if self.email in ["iuok@gmail.com","abc@gmail.com"]:
 			frappe.throw("email iuok exist")
+
+		for item in self.custom_list:
+			item.amount = item.rate * item.quantity
 	
 	def before_save(self):
 		if self.lname == "xyz":
-			frappe.msgprint("change last name")
+			frappe.throw("change last name")
 	
 	def before_insert(self):
 		if self.lname == "abc":
@@ -51,4 +54,6 @@ class custom(Document):
 
 	def after_delete(self):
 		if self.age == 30:
-			frappe.msgprint("deleted")		
+			frappe.msgprint("deleted")	
+
+	
