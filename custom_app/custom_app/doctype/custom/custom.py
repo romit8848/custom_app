@@ -56,4 +56,25 @@ class custom(Document):
 		if self.age == 30:
 			frappe.msgprint("deleted")	
 
-	
+def validate(self,method):
+	if self.age == 21:
+		frappe.msgprint("young")
+
+	if self.date == "2022-08-06":
+		frappe.msgprint("today date")
+
+def before_save(self,method):
+	if self.lname == "lname":
+		frappe.msgprint("last name invalid")
+
+def before_insert(self,method):
+	if self.email == "test":
+		frappe.msgprint("email invalid")
+
+def article(self,method):
+	if 	self.select == "yes":
+		frappe.msgprint("right")
+
+def munn(self,method):
+	if self.select == "no":
+		frappe.msgprint("false")

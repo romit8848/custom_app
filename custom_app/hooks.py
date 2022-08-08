@@ -186,3 +186,18 @@ user_data_fields = [
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+doc_events = {
+	"custom": {
+		"validate": ["custom_app.custom_app.doctype.custom.custom.validate","custom_app.custom_app.doctype.custom.custom.article"],
+		"before_save": "custom_app.custom_app.doctype.custom.custom.before_save",
+		"before_insert": "custom_app.custom_app.doctype.custom.custom.before_insert",
+		"on_submit": "custom_app.custom_app.doctype.custom.custom.article",
+		# "on_cancel": "custom_app.custom_app.doctype.custom.custom.munn",
+		"before_cancel":"custom_app.custom_app.doctype.custom.custom.munn",
+		"after_trash":"custom_app.custom_app.doctype.custom.custom.munn",
+		"after_insert":"custom_app.custom_app.doctype.custom.custom.munn",
+		"on_update":"custom_app.custom_app.doctype.custom.custom.munn"
+		
+	}
+}
+

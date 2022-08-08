@@ -17,7 +17,7 @@
   "section_break_8",
   "password_9",
   "fetch_from",
-  "selsct",
+  "select",
   "abc",
   "amended_from",
   "age",
@@ -84,12 +84,6 @@
    "no_copy": 1
   },
   {
-   "fieldname": "selsct",
-   "fieldtype": "Select",
-   "label": "select",
-   "options": "\nyes\nno\nboth\nno one"
-  },
-  {
    "fieldname": "abc",
    "fieldtype": "Signature",
    "label": "abc"
@@ -114,12 +108,18 @@
    "fieldtype": "Table",
    "label": "custom list",
    "options": "custom item"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "select",
+   "options": "\nyes\nno\nboth\nno one"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-28 16:41:28.350573",
+ "modified": "2022-08-06 17:10:50.352642",
  "modified_by": "Administrator",
  "module": "Custom App",
  "name": "custom",
