@@ -15,7 +15,6 @@
   "date",
   "image",
   "section_break_8",
-  "password_9",
   "fetch_from",
   "select",
   "abc",
@@ -69,12 +68,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "password_9",
-   "fieldtype": "Table",
-   "label": "TEST",
-   "options": "Sales Invoice Item"
-  },
-  {
    "fetch_from": "dn.item_name",
    "fetch_if_empty": 1,
    "fieldname": "fetch_from",
@@ -119,7 +112,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-08-06 17:10:50.352642",
+ "modified": "2022-08-10 13:41:45.401401",
  "modified_by": "Administrator",
  "module": "Custom App",
  "name": "custom",
