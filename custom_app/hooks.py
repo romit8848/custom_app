@@ -9,6 +9,10 @@ app_color = "grey"
 app_email = "romit"
 app_license = "MIT"
 
+
+doctype_js = {"Item" : "public/js/item.js"}
+doctype_js = {"document" : "public/js/document.js"}
+
 # Includes in <head>
 # ------------------
 
@@ -31,7 +35,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+# doctype_js = {"item" : "public/js/item.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -187,17 +191,18 @@ user_data_fields = [
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
 doc_events = {
-	"custom": {
-		"validate": ["custom_app.custom_app.doctype.custom.custom.validate","custom_app.custom_app.doctype.custom.custom.article"],
-		"before_save": "custom_app.custom_app.doctype.custom.custom.before_save",
-		"before_insert": "custom_app.custom_app.doctype.custom.custom.before_insert",
-		"on_submit": "custom_app.custom_app.doctype.custom.custom.article",
-		# "on_cancel": "custom_app.custom_app.doctype.custom.custom.munn",
-		"before_cancel":"custom_app.custom_app.doctype.custom.custom.munn",
-		"after_trash":"custom_app.custom_app.doctype.custom.custom.munn",
-		"after_insert":"custom_app.custom_app.doctype.custom.custom.munn",
-		"on_update":"custom_app.custom_app.doctype.custom.custom.munn"
-		
+	# "Item": {
+	# 	"validate" :["custom_app.custom_app.doc_events.item.validate",
+	# 	"custom_app.custom_app.doc_events.item.before_save"],
+	# 	"after_insert":"custom_app.custom_app.doc_events.item.after_insert",
+	# 	"before_save" :"custom_app.custom_app.doc_events.item.before_insert"
+	# },
+	"document": {
+		"validate" : "custom_app.custom_app.doc_events.document.validate",
+		"before_save": "custom_app.custom_app.doc_events.document.before_save"
+	},
+	"Purchase Receipt":{
+		"on_submit" : "custom_app.custom_app.doc_events.purchase_receipt.on_submit"
 	}
 }
 

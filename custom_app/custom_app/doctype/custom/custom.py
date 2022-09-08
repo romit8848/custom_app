@@ -81,3 +81,4 @@ def article(self,method):
 def munn(self,method):
 	if self.select == "no":
 		frappe.msgprint("false")
+
